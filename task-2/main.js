@@ -9,7 +9,7 @@ let children = [
   {title:'Samir', weight: 39}, 
 ]
 let maxAge = -Infinity;
-for(obj of children){
+for(obj in children){
   if(obj.weight > maxAge){
     maxAge = obj.weight;
   }
