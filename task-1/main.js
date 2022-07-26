@@ -13,7 +13,7 @@ let sum = 0;
 
 let foods = ["Apple", "Avocado", "Cherry", "Orange", "Kiwi"];
 
-for (obj of products) {
+for (obj in products) {
    if(foods.includes(obj.title)){
     sum=obj.weight+sum
    }
