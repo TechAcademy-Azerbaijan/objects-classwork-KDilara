@@ -58,16 +58,17 @@ let Masin = [
 ];
 let count;
 let say = 0;
-let arr = ["Avtomat", "Benzin", "Sedan"];
+let arr = ["Avtomat", "Benzin", "Sedan", 30000];
 for (el of Masin) {
-  count = 0;
   for (key in el) {
-    if (arr.includes(el[key]) || el[key] < 30000) {
+    if (arr.includes(el[key]) || el[key] < arr[3]) {
       count++;
     }
-    if (count == 3) {
+    if (count >= 3 ) {
       say++;
+      
     }
   }
+  count = 0;
 }
 console.log(say);
